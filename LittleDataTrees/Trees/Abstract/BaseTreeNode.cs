@@ -14,11 +14,11 @@ namespace Trees.Abstract
         /// <summary>
         /// The node on the left of this node.
         /// </summary>
-        public TNode Left { get; set; }
+        public TNode Left { get; internal set; }
         /// <summary>
         /// The node on the right of this node.
         /// </summary>
-        public TNode Right { get; set; }
+        public TNode Right { get; internal set; }
         /// <summary>
         /// The value of this node.
         /// </summary>
