@@ -22,7 +22,7 @@ namespace Trees.Abstract
         /// <summary>
         /// The value of this node.
         /// </summary>
-        public TValue Value { get; protected set; }
+        public TValue Value { get; internal set; }
 
         /// <summary>
         /// Constructor for BaseTreeNode. Sets Value and Left/Right to null.
