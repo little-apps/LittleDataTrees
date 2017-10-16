@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Trees.Enumerators;
 using Trees.Misc;
@@ -38,12 +39,41 @@ namespace Trees.Abstract
         }
 
         /// <summary>
+        /// Constructor for populating BaseTree with existing collection
+        /// </summary>
+        /// <param name="collection">Collection to populate tree with.</param>
+        /// <exception cref="ArgumentNullException">Thrown if collection is null.</exception>
+        public BaseTree(IEnumerable<TValue> collection)
+        {
+            if (collection == null)
+                throw new ArgumentNullException(nameof(collection));
+
+            AddRange(collection);
+        }
+
+        /// <summary>
         /// Adds node with value to tree.
         /// </summary>
         /// <param name="value">Value to add</param>
         /// <param name="tag">Option tag object to associate with node (default is null)</param>
         /// <returns>Node that was added.</returns>
         public abstract TNode Add(TValue value, object tag = null);
+
+        /// <summary>
+        /// Adds an existing collection to the tree.
+        /// </summary>
+        /// <param name="collection">Existing collection</param>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="collection"/> is null.</exception>
+        public virtual void AddRange(IEnumerable<TValue> collection)
+        {
+            if (collection == null)
+                throw new ArgumentNullException(nameof(collection));
+
+            foreach (var value in collection)
+            {
+                Add(value);
+            }
+        }
 
         /// <summary>
         /// Deletes node with value from tree.
