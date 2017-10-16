@@ -38,6 +38,42 @@ namespace Trees.Abstract
         }
 
         /// <summary>
+        /// Adds node with value to tree.
+        /// </summary>
+        /// <param name="value">Value to add</param>
+        /// <param name="tag">Option tag object to associate with node (default is null)</param>
+        /// <returns>Node that was added.</returns>
+        public abstract TNode Add(TValue value, object tag = null);
+
+        /// <summary>
+        /// Deletes node with value from tree.
+        /// </summary>
+        /// <param name="value">Value to delete</param>
+        public abstract void Delete(TValue value);
+
+        /// <summary>
+        /// Checks if value exists in tree.
+        /// </summary>
+        /// <param name="value">Value to check exists.</param>
+        /// <returns>True if it exists.</returns>
+        public abstract bool Contains(TValue value);
+
+        /// <summary>
+        /// Finds node with value in tree.
+        /// </summary>
+        /// <param name="value">Value to find.</param>
+        /// <returns>Node in tree with value.</returns>
+        public abstract TNode Find(TValue value);
+
+        /// <summary>
+        /// Clears all nodes from tree
+        /// </summary>
+        public virtual void Clear()
+        {
+            Root = null;
+        }
+
+        /// <summary>
         /// Outputs the tree vertically to <paramref name="textWriter"/>
         /// </summary>
         /// <param name="textWriter"><seealso cref="TextWriter"/> to write to</param>
