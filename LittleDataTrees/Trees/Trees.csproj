@@ -40,6 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IBaseNode.cs" />
+    <Compile Include="Abstract\BaseTree.cs" />
+    <Compile Include="Abstract\BaseTreeNode.cs" />
+    <Compile Include="Enumerators\InOrderEnumerator.cs" />
+    <Compile Include="Enumerators\PostOrderEnumerator.cs" />
+    <Compile Include="Enumerators\PreOrderEnumerator.cs" />
+    <Compile Include="Misc\Output.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
