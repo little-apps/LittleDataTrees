@@ -12,6 +12,6 @@ namespace Trees.Abstract
         /// <summary>
         /// Value for node.
         /// </summary>
-        T Value { get; set; }
+        T Value { get; }
     }
 }
