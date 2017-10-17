@@ -23,7 +23,7 @@ namespace Trees.Abstract
         /// <summary>
         /// Gets the height of the tree.
         /// </summary>
-        public uint Height => Root?.Height ?? 0;
+        public uint Height { get; protected set; }
         
         /// <summary>
         /// If true, tree root is null.

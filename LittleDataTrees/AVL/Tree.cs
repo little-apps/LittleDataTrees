@@ -52,12 +52,16 @@ namespace Trees.AVL
 
         private void CalcHeights()
         {
+            Height = 1;
             CalcHeights(Root, 1);
         }
 
-        private static void CalcHeights(Node<T> node, uint height)
+        private void CalcHeights(Node<T> node, uint height)
         {
             node.Height = height;
+
+            // Set tree height to this height (if it's higher)
+            Height = Math.Max(Height, height);
 
             if (node.Left != null)
                 CalcHeights(node.Left, height + 1);
