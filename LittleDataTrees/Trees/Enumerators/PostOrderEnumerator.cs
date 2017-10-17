@@ -97,7 +97,7 @@ namespace Trees.Enumerators
         public void Reset()
         {
             _stack.Clear();
-            _stack.Push(_tree.Root);
+            _nextNode = _tree.Root;
             Current = default(TValue);
         }
 
