@@ -61,6 +61,10 @@ namespace Trees.Enumerators
                 }
                 else
                 {
+                    if (_stack.Count == 0)
+                        // Nothing left
+                        break;
+
                     var leftMost = _stack.Pop();
                     _currentNode = leftMost.Right;
 
