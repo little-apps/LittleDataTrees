@@ -44,7 +44,7 @@ namespace Trees.Enumerators
 
         /// <inheritdoc />
         /// <summary>
-        /// Moves to the root, left, and then right node.
+        /// Moves to the left, right, and then root node.
         /// </summary>
         /// <returns>True if another node exists</returns>
         public bool MoveNext()
