@@ -180,6 +180,18 @@ namespace LittleDataTrees.Tests
         }
 
         /// <summary>
+        /// Tests the tree height.
+        /// </summary>
+        [Test]
+        public void TestNodeHeight()
+        {
+            var expected = 2;
+            var actual = Tree.Find(4).Height;
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
         /// Tests the pre order enumeration
         /// </summary>
         [Test]
