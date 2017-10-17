@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleDataTrees", "Trees\LittleDataTrees.csproj", "{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleDataTrees.Tests", "LittleDataTrees.Tests\LittleDataTrees.Tests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleDataTrees", "LittleDataTrees\LittleDataTrees.csproj", "{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
