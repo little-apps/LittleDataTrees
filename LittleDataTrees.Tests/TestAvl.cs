@@ -185,7 +185,7 @@ namespace LittleDataTrees.Tests
         [Test]
         public void TestNodeHeight()
         {
-            var expected = 2;
+            var expected = 3;
             var actual = Tree.Find(4).Height;
 
             Assert.AreEqual(expected, actual);
