@@ -17,18 +17,27 @@ namespace Trees.Enumerators
     {
         private readonly BaseTree<TNode, TValue> _tree;
         private readonly Stack<TNode> _stack = new Stack<TNode>();
+
+        /// <summary>
+        /// The current node to use. This is initially set as the root of the tree.
+        /// </summary>
         private TNode _currentNode;
 
-        public TValue Current => _currentNode.Value;
+        /// <summary>
+        /// The current element.
+        /// </summary>
+        /// <remarks>This is not reflective of the <seealso cref="_currentNode"/> and is to be set to null when the object is instantiated.</remarks>
+        public TValue Current { get; private set; }
 
         private bool HasNext => _stack.Count > 0 || Current != null;
 
-        object IEnumerator.Current => Current;
+        object IEnumerator.Current => !Equals(Current, default(TValue)) ? Current : (object) null;
 
         public InOrderEnumerator(BaseTree<TNode, TValue> tree)
         {
             _tree = tree ?? throw new ArgumentNullException(nameof(tree));
             _currentNode = tree.Root;
+            Current = default(TValue);
         }
 
         public void Dispose()
@@ -55,16 +64,20 @@ namespace Trees.Enumerators
                     var leftMost = _stack.Pop();
                     _currentNode = leftMost.Right;
 
+                    Current = leftMost.Value;
+
                     return true;
                 }
             }
 
+            Current = default(TValue);
             return false;
         }
 
         public void Reset()
         {
             _currentNode = _tree.Root;
+            Current = default(TValue);
         }
 
 
