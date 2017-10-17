@@ -130,9 +130,8 @@ namespace LittleDataTrees.Tests
             const int addValue = -1;
 
             var beforeAddCount = Tree.Count;
-            Node<int> addedNode;
-            
-            Assert.DoesNotThrow(() => addedNode = Tree.Add(addValue));
+
+            Assert.DoesNotThrow(() => Tree.Add(addValue));
             Assert.Greater(Tree.Count, beforeAddCount);
             Assert.True(Tree.Contains(addValue));
         }
