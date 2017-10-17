@@ -21,7 +21,7 @@ namespace Trees.Enumerators
 
         private bool HasNext => _stack.Count > 0;
 
-        object IEnumerator.Current => Current;
+        object IEnumerator.Current => !Equals(Current, default(TValue)) ? Current : (object) null;
 
         /// <summary>
         /// Constructor for pre-order enumerator
