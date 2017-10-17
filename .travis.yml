@@ -1,0 +1,9 @@
+language: csharp
+solution: LittleDataTrees.sln
+mono: latest
+install:
+  - nuget restore LittleDataTrees.sln
+  - nuget install NUnit.ConsoleRunner -Version 3.6.1 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Mono LittleDataTrees.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.6.1/tools/nunit3-console.exe ./LittleDataTrees.Tests/bin/Mono/LittleDataTrees.Tests.dll
