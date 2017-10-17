@@ -7,8 +7,8 @@
     <ProjectGuid>{E2B3434F-FECF-45B8-9CB7-A9B220D00BDC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Trees</RootNamespace>
-    <AssemblyName>Trees</AssemblyName>
+    <RootNamespace>LittleDataTrees</RootNamespace>
+    <AssemblyName>LittleDataTrees</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
