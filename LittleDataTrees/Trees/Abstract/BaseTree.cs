@@ -19,6 +19,11 @@ namespace Trees.Abstract
         /// Root node of tree.
         /// </summary>
         public TNode Root { get; protected set; }
+
+        /// <summary>
+        /// Gets the height of the tree.
+        /// </summary>
+        public uint Height => Root?.Height ?? 0;
         
         /// <summary>
         /// If true, tree root is null.

@@ -25,6 +25,11 @@ namespace Trees.Abstract
         public TValue Value { get; internal set; }
 
         /// <summary>
+        /// The height of the node in the tree
+        /// </summary>
+        public uint Height { get; internal set; }
+
+        /// <summary>
         /// Constructor for BaseTreeNode. Sets Value and Left/Right to null.
         /// </summary>
         /// <param name="value">Value to set (can be null)</param>
