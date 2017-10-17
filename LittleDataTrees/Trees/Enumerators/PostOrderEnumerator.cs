@@ -36,6 +36,7 @@ namespace Trees.Enumerators
         {
             _tree = tree ?? throw new ArgumentNullException(nameof(tree));
             _nextNode = tree.Root;
+            Current = default(TValue);
         }
 
         public void Dispose()
@@ -97,6 +98,7 @@ namespace Trees.Enumerators
         {
             _stack.Clear();
             _stack.Push(_tree.Root);
+            Current = default(TValue);
         }
 
         public IEnumerator GetEnumerator()
