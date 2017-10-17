@@ -43,6 +43,7 @@
     <Compile Include="Abstract\IBaseNode.cs" />
     <Compile Include="Abstract\BaseTree.cs" />
     <Compile Include="Abstract\BaseTreeNode.cs" />
+    <Compile Include="AVL\Node.cs" />
     <Compile Include="Enumerators\InOrderEnumerator.cs" />
     <Compile Include="Enumerators\PostOrderEnumerator.cs" />
     <Compile Include="Enumerators\PreOrderEnumerator.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Exceptions\NodeNotFoundException.cs" />
     <Compile Include="Misc\Output.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AVL\Tree.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
