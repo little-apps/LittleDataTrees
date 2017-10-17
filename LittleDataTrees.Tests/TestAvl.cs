@@ -1,9 +1,8 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Trees.AVL;
 using Trees.Exceptions;
 
-namespace Tests
+namespace LittleDataTrees.Tests
 {
     [TestFixture]
     public class TestAvl
@@ -25,19 +24,6 @@ namespace Tests
             Tree.Add(9);
             Tree.Add(5);
             Tree.Add(7);
-
-            //Tree.Add("Randy"); // 6
-            //Tree.Add("Bubbles"); // 1
-            //Tree.Add("Ricky"); // 8
-            //Tree.Add("Julian"); // 4
-            //Tree.Add("Jim"); // 3
-            //Tree.Add("Corey"); // 2
-            //Tree.Add("Trevor"); // 10
-            //Tree.Add("Sarah"); // 9
-            //Tree.Add("Lucy"); // 5
-            //Tree.Add("Ray"); // 7
-
-            
         }
 
         /// <summary>
