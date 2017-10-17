@@ -220,7 +220,7 @@ namespace LittleDataTrees.Tests
         [Test]
         public void TestInOrder()
         {
-            var expected = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var expected = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
             var actualEnumerator = Tree.InOrder;
 
             var i = 0;
