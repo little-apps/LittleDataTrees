@@ -103,10 +103,7 @@ namespace Trees.Abstract
         /// <summary>
         /// Clears all nodes from tree
         /// </summary>
-        public virtual void Clear()
-        {
-            Root = null;
-        }
+        public abstract void Clear();
 
         /// <summary>
         /// Outputs the tree vertically to <paramref name="textWriter"/>
