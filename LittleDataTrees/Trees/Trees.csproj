@@ -46,6 +46,8 @@
     <Compile Include="Enumerators\InOrderEnumerator.cs" />
     <Compile Include="Enumerators\PostOrderEnumerator.cs" />
     <Compile Include="Enumerators\PreOrderEnumerator.cs" />
+    <Compile Include="Exceptions\NodeAlreadyExistsException.cs" />
+    <Compile Include="Exceptions\NodeNotFoundException.cs" />
     <Compile Include="Misc\Output.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
