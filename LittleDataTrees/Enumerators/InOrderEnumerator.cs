@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Trees.Abstract;
 
-namespace Trees.Enumerators
+namespace LittleDataTrees.Enumerators
 {
     /// <summary>
     /// Class for enumerating through tree in-order
