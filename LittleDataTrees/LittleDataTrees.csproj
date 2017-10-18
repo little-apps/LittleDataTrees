@@ -44,6 +44,8 @@
     <Compile Include="Abstract\BaseTree.cs" />
     <Compile Include="Abstract\BaseTreeNode.cs" />
     <Compile Include="AVL\Node.cs" />
+    <Compile Include="BST\Node.cs" />
+    <Compile Include="BST\Tree.cs" />
     <Compile Include="Enumerators\InOrderEnumerator.cs" />
     <Compile Include="Enumerators\PostOrderEnumerator.cs" />
     <Compile Include="Enumerators\PreOrderEnumerator.cs" />
