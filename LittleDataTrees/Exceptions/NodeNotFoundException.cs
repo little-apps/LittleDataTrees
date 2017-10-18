@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Trees.Exceptions
+namespace LittleDataTrees.Exceptions
 {
     public class NodeNotFoundException : Exception
     {
