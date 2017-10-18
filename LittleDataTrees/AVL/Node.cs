@@ -1,7 +1,7 @@
 ﻿using System;
 using Trees.Abstract;
 
-namespace Trees.AVL
+namespace LittleDataTrees.AVL
 {
     public class Node<T> : BaseTreeNode<Node<T>, T> where T : IComparable<T>
     {

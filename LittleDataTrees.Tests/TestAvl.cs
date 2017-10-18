@@ -1,6 +1,5 @@
 ﻿using LittleDataTrees.AVL;
 using NUnit.Framework;
-using Trees.AVL;
 using Trees.Exceptions;
 
 namespace LittleDataTrees.Tests
