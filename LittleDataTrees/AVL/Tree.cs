@@ -1,8 +1,9 @@
 ﻿using System;
 using Trees.Abstract;
+using Trees.AVL;
 using Trees.Exceptions;
 
-namespace Trees.AVL
+namespace LittleDataTrees.AVL
 {
     public class Tree<T> : BaseTree<Node<T>, T> where T : IComparable<T>
     {

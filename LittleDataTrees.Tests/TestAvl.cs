@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using LittleDataTrees.AVL;
+using NUnit.Framework;
 using Trees.AVL;
 using Trees.Exceptions;
 
@@ -7,7 +8,7 @@ namespace LittleDataTrees.Tests
     [TestFixture]
     public class TestAvl
     {
-        public Trees.AVL.Tree<int> Tree;
+        public Tree<int> Tree;
 
         [SetUp]
         public void SetUp()
