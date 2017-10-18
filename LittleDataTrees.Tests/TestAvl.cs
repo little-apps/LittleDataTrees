@@ -1,4 +1,5 @@
 ﻿using LittleDataTrees.AVL;
+using LittleDataTrees.Exceptions;
 using NUnit.Framework;
 using Trees.Exceptions;
 

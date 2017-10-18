@@ -1,4 +1,5 @@
 ﻿using System;
+using LittleDataTrees.Exceptions;
 using Trees.Abstract;
 using Trees.Exceptions;
 
