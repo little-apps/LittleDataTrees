@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using LittleDataTrees.Enumerators;
-using Trees.Misc;
+using LittleDataTrees.Misc;
 
 namespace LittleDataTrees.Abstract
 {

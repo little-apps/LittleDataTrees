@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Trees.Abstract;
+using LittleDataTrees.Abstract;
 
-namespace Trees.Misc
+namespace LittleDataTrees.Misc
 {
     public class Output<TNode, TValue>
         where TValue : IComparable<TValue>

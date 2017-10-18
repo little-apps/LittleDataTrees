@@ -1,6 +1,6 @@
 ﻿using System;
+using LittleDataTrees.Abstract;
 using LittleDataTrees.Exceptions;
-using Trees.Abstract;
 
 namespace LittleDataTrees.AVL
 {
