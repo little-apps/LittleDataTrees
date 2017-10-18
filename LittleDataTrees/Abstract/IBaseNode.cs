@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Trees.Abstract
+namespace LittleDataTrees.Abstract
 {
     /// <inheritdoc />
     /// <summary>

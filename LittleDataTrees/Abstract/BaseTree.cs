@@ -4,7 +4,7 @@ using System.IO;
 using LittleDataTrees.Enumerators;
 using Trees.Misc;
 
-namespace Trees.Abstract
+namespace LittleDataTrees.Abstract
 {
     /// <summary>
     /// Abstract tree class

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Trees.Abstract
+namespace LittleDataTrees.Abstract
 {
     /// <summary>
     /// Abstract class for tree nodes (with left and right nodes)

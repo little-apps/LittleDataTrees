@@ -1,5 +1,5 @@
 ﻿using System;
-using Trees.Abstract;
+using LittleDataTrees.Abstract;
 
 namespace LittleDataTrees.AVL
 {
