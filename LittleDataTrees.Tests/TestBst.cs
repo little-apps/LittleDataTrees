@@ -197,5 +197,74 @@ namespace LittleDataTrees.Tests
             Assert.False(Tree.Contains(valueToFind));
             Assert.Throws<NodeNotFoundException>(() => Tree.Find(valueToFind));
         }
+
+        /// <summary>
+        /// Tests the pre order enumeration
+        /// </summary>
+        [Test]
+        public void TestPreOrder()
+        {
+            var expected = new[] {6, 1, 4, 3, 2, 5, 8, 7, 10, 9};
+            var actualEnumerator = Tree.PreOrder;
+
+            var i = 0;
+
+            actualEnumerator.Reset();
+
+            while (actualEnumerator.MoveNext())
+            {
+                Assert.AreEqual(expected[i], actualEnumerator.Current);
+
+                i++;
+            }
+
+            Assert.AreEqual(expected.Length, i);
+        }
+
+        /// <summary>
+        /// Tests the in order enumeration
+        /// </summary>
+        [Test]
+        public void TestInOrder()
+        {
+            var expected = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            var actualEnumerator = Tree.InOrder;
+
+            var i = 0;
+
+            actualEnumerator.Reset();
+
+            while (actualEnumerator.MoveNext())
+            {
+                Assert.AreEqual(expected[i], actualEnumerator.Current);
+
+                i++;
+            }
+
+            Assert.AreEqual(expected.Length, i);
+        }
+
+        /// <summary>
+        /// Tests the post order enumeration
+        /// </summary>
+        [Test]
+        public void TestPostOrder()
+        {
+            var expected = new[] {2, 3, 5, 4, 1, 7, 9, 10, 8, 6};
+            var actualEnumerator = Tree.PostOrder;
+
+            var i = 0;
+
+            actualEnumerator.Reset();
+
+            while (actualEnumerator.MoveNext())
+            {
+                Assert.AreEqual(expected[i], actualEnumerator.Current);
+
+                i++;
+            }
+
+            Assert.AreEqual(expected.Length, i);
+        }
     }
 }
