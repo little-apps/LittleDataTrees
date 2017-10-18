@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="TestAvl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestBst.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
