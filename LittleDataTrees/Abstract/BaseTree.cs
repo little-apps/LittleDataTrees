@@ -29,11 +29,7 @@ namespace LittleDataTrees.Abstract
         /// If true, tree root is null.
         /// </summary>
         public bool IsEmpty => Root == null;
-
-        public InOrderEnumerator<TNode, TValue> InOrder => new InOrderEnumerator<TNode, TValue>(this);
-        public PreOrderEnumerator<TNode, TValue> PreOrder => new PreOrderEnumerator<TNode, TValue>(this);
-        public PostOrderEnumerator<TNode, TValue> PostOrder => new PostOrderEnumerator<TNode, TValue>(this);
-
+        
         /// <summary>
         /// Constructor for BaseTree.
         /// </summary>
