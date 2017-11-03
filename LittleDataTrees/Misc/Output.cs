@@ -7,10 +7,10 @@ using LittleDataTrees.Abstract;
 namespace LittleDataTrees.Misc
 {
     public class Output<TNode, TValue>
-        where TValue : IComparable<TValue>
-        where TNode : BaseTreeNode<TNode, TValue>
+        where TNode : LeftRightNode<TNode, TValue>
+        where TValue : IComparable<TValue> 
     {
-        private readonly BaseTree<TNode, TValue> _tree;
+        private readonly LeftRightTree<TNode, TValue> _tree;
         private readonly TextWriter _textWriter;
 
         /// <summary>
@@ -19,7 +19,7 @@ namespace LittleDataTrees.Misc
         /// <param name="tree">Tree instance to print.</param>
         /// <param name="textWriter"><seealso cref="TextWriter"/> to print to.</param>
         /// <exception cref="ArgumentNullException">Thrown if <paramref name="tree"/> or <paramref name="textWriter"/> is null.</exception>
-        public Output(BaseTree<TNode, TValue> tree, TextWriter textWriter)
+        public Output(LeftRightTree<TNode, TValue> tree, TextWriter textWriter)
         {
             _tree = tree ?? throw new ArgumentNullException(nameof(tree), "Tree cannot be null");
             _textWriter = textWriter ?? throw new ArgumentNullException(nameof(textWriter), "Text writer cannot be null");
