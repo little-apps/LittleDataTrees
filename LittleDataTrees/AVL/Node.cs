@@ -3,8 +3,10 @@ using LittleDataTrees.Abstract;
 
 namespace LittleDataTrees.AVL
 {
-    public class Node<T> : BaseTreeNode<Node<T>, T> where T : IComparable<T>
+    public class Node<T> : LeftRightNode<Node<T>, T> 
+        where T : IComparable<T>
     {
+
         public object Tag;
 
         public int MaxDepth
@@ -64,8 +66,6 @@ namespace LittleDataTrees.AVL
             }
         }
 
-        
-
         public override int CompareTo(IBaseNode<T> other)
         {
             if (ReferenceEquals(other, null))
@@ -76,5 +76,7 @@ namespace LittleDataTrees.AVL
 
             return Value.CompareTo(other.Value);
         }
+
+        
     }
 }

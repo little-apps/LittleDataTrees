@@ -8,13 +8,13 @@ namespace LittleDataTrees.Enumerators
     /// <summary>
     /// Class for enumerating through tree in pre-order
     /// </summary>
-    /// <typeparam name="TNode">Type of node (must inherit <see cref="BaseTreeNode{TNode,TValue}"/>)</typeparam>
+    /// <typeparam name="TNode">Type of node (must inherit <see cref="LeftRightNode{TValue}"/></typeparam>
     /// <typeparam name="TValue">Type of values (must implement <see cref="IComparable{TValue}"/>)</typeparam>
     public class PreOrderEnumerator<TNode, TValue> : IEnumerator<TValue>, IEnumerable
-        where TNode : BaseTreeNode<TNode, TValue>
-        where TValue : IComparable<TValue>
+        where TNode : LeftRightNode<TNode, TValue>
+        where TValue : IComparable<TValue> 
     {
-        private readonly BaseTree<TNode, TValue> _tree;
+        private readonly LeftRightTree<TNode, TValue> _tree;
         private readonly Stack<TNode> _stack = new Stack<TNode>();
 
         public TValue Current { get; private set; }
@@ -27,7 +27,7 @@ namespace LittleDataTrees.Enumerators
         /// Constructor for pre-order enumerator
         /// </summary>
         /// <param name="tree">Tree to enumerate through</param>
-        public PreOrderEnumerator(BaseTree<TNode, TValue> tree)
+        public PreOrderEnumerator(LeftRightTree<TNode, TValue> tree)
         {
             _tree = tree ?? throw new ArgumentNullException(nameof(tree));
             _stack.Push(tree.Root);

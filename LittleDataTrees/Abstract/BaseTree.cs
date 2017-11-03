@@ -12,7 +12,7 @@ namespace LittleDataTrees.Abstract
     /// <typeparam name="TValue">Type of values in tree (must implement <seealso cref="IComparable{TValue}"/></typeparam>
     /// <typeparam name="TNode">Type of node for tree (must inherit <seealso cref="BaseTreeNode{TNode,TValue}"/>)</typeparam>
     public abstract class BaseTree<TNode, TValue>
-        where TNode : BaseTreeNode<TNode, TValue>
+        where TNode : BaseTreeNode<TValue>
         where TValue : IComparable<TValue>
     {
         /// <summary>

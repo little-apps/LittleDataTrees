@@ -8,7 +8,7 @@ namespace LittleDataTrees.BST
     /// Binary Search Tree (BST)
     /// </summary>
     /// <typeparam name="T">Type of values in tree.</typeparam>
-    public class Tree<T> : BaseTree<Node<T>, T>
+    public class Tree<T> : LeftRightTree<Node<T>, T>
         where T : IComparable<T>
     {
         /// <summary>

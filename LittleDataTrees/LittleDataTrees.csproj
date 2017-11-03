@@ -43,6 +43,8 @@
     <Compile Include="Abstract\IBaseNode.cs" />
     <Compile Include="Abstract\BaseTree.cs" />
     <Compile Include="Abstract\BaseTreeNode.cs" />
+    <Compile Include="Abstract\LeftRightNode.cs" />
+    <Compile Include="Abstract\LeftRightTree.cs" />
     <Compile Include="AVL\Node.cs" />
     <Compile Include="BST\Node.cs" />
     <Compile Include="BST\Tree.cs" />

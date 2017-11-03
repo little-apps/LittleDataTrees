@@ -4,7 +4,8 @@ using LittleDataTrees.Exceptions;
 
 namespace LittleDataTrees.AVL
 {
-    public class Tree<T> : BaseTree<Node<T>, T> where T : IComparable<T>
+    public class Tree<T> : LeftRightTree<Node<T>, T> 
+        where T : IComparable<T>
     {
         public uint Count { get; protected set; }
 

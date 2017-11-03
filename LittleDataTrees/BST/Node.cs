@@ -3,9 +3,18 @@ using LittleDataTrees.Abstract;
 
 namespace LittleDataTrees.BST
 {
-    public class Node<T> : BaseTreeNode<Node<T>, T>
+    public class Node<T> : LeftRightNode<Node<T>, T>
         where T : IComparable<T>
     {
+        /// <summary>
+        /// The node on the left of this node.
+        /// </summary>
+        public new Node<T> Left { get; internal set; }
+        /// <summary>
+        /// The node on the right of this node.
+        /// </summary>
+        public new Node<T> Right { get; internal set; }
+
         public Node(T value) : base(value)
         {
         }

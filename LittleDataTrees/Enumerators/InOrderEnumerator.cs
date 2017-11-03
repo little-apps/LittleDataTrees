@@ -8,14 +8,14 @@ namespace LittleDataTrees.Enumerators
     /// <summary>
     /// Class for enumerating through tree in-order
     /// </summary>
-    /// <typeparam name="TNode">Type of node (must inherit <see cref="BaseTreeNode{TNode,TValue}"/>)</typeparam>
+    /// <typeparam name="TNode">Type of node (must inherit <see cref="LeftRightNode{TValue}"/></typeparam>
     /// <typeparam name="TValue">Type of values (must implement <see cref="IComparable{TValue}"/>)</typeparam>
     /// <example>If the tree contains 5, 3, 7, 4, 1, 2, 8, 9, 6, it will be iterated through as 1, 2, 3, 4, 5, 6, 7, 8, 9.</example>
     public class InOrderEnumerator<TNode, TValue> : IEnumerator<TValue>, IEnumerable
-        where TNode : BaseTreeNode<TNode, TValue>
+        where TNode : LeftRightNode<TNode, TValue>
         where TValue : IComparable<TValue>
     {
-        private readonly BaseTree<TNode, TValue> _tree;
+        private readonly LeftRightTree<TNode, TValue> _tree;
         private readonly Stack<TNode> _stack = new Stack<TNode>();
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace LittleDataTrees.Enumerators
 
         object IEnumerator.Current => !Equals(Current, default(TValue)) ? Current : (object) null;
 
-        public InOrderEnumerator(BaseTree<TNode, TValue> tree)
+        public InOrderEnumerator(LeftRightTree<TNode, TValue> tree)
         {
             _tree = tree ?? throw new ArgumentNullException(nameof(tree));
             _currentNode = tree.Root;
@@ -66,7 +66,7 @@ namespace LittleDataTrees.Enumerators
                         break;
 
                     var leftMost = _stack.Pop();
-                    _currentNode = leftMost.Right;
+                    _currentNode = leftMost.Right as TNode;
 
                     Current = leftMost.Value;
 
